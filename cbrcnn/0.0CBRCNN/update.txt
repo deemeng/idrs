@@ -1,0 +1,11 @@
+compare to 0.2BiLSTM updates:
+
+1. model name
+    CBRCNN
+2. No Dropout layer
+    - default dropout rate = 0.
+3. Model Structure
+    - one BiLSTM layer (1 hidden layer -- num_layers=1)
+    - one Conv2d layer: input_channel=1, output_channel=3, kernel_szie = (7, hidden_size*2)
+    - tanh activation function
+    - one Conv1d layer: input_channel=3, output_channel=1, kernel_szie = 1
