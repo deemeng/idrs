@@ -1,0 +1,5 @@
+compare to 0.1/0.2/0.3BiLSTM updates:
+
+1. No Dropout layer
+    - dropout rate = 0.
+2. Num_hidden_layer = 1 (which equals to 2 in other models).

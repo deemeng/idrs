@@ -1,0 +1,15 @@
+06/21/2022 07:42:17 am Device: cuda
+06/21/2022 07:42:25 am Loading training file ...
+06/21/2022 07:42:25 am Loading test file ...
+06/21/2022 07:42:40 am Loading training file ...
+06/21/2022 07:42:40 am Loading test file ...
+06/21/2022 07:42:42 am Training set: 8
+06/21/2022 07:42:42 am Test set:     2
+06/21/2022 07:43:36 am model_name: BiLSTM0.2 
+                 batch_size: 2 
+                 num_epochs: 500 
+                 learning_rate: 0.001
+06/21/2022 07:43:36 am *********************************
+06/21/2022 07:43:36 am epoch: 0
+06/21/2022 07:43:36 am *********************************
+06/21/2022 07:43:36 am 1. TRAINING:

@@ -1,0 +1,11 @@
+compare to 0.2BiLSTM updates:
+
+1. rocPlot
+    - merge training and val roc_auc plots into one plot;
+    - fig size 8 * 8.
+2. No Dropout layer
+    - add drop out layer after fc layer;
+    - default dropout rate = 0.
+3. AUC score plot
+    - change color
+5. batch_size = 16
