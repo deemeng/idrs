@@ -1,0 +1,27 @@
+compare to 0.0CBRCNN updates:
+
+1. model name
+    CBRCNNStage1
+    CBRCNNStage2
+    
+2. hyperparams
+    - num_layers (num_of_hidden_layers for LSTM) = 1
+    - hidden_size = 40 [reduced to 20 for Stage 2]
+    - conv1D (num_of_channel = 1)
+    - batch_size = 1 or 16
+
+3. Model Structure
+    For each stage:
+    - one BiLSTM layer (1 hidden layer -- num_layers=1)
+    - one Conv2d layer: input_channel=1, output_channel=3, kernel_szie = (7, hidden_size*2)
+    - tanh activation function
+    - one Conv1d layer: input_channel=3, output_channel=1, kernel_szie = 1
+    - sigmoid output
+    
+4. 2 Models: modelStage1 & modelStage2
+    - save 2 models seperactly each time
+    - plot for 2 models as well
+
+5. Functions
+    - seqSegment
+        Add a util function seqSegment to process the output from Stage1 as the input of Stage 2.
